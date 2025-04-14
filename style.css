@@ -1,83 +1,81 @@
 body {
-font-family: 'Segoe UI', Tahoma, sans-serif;
-line-height: 1.6;
-margin: 0;
-padding: 20px;
-background-color: #0d0d0d;
-background-image: url('bg-3d-tech.png');
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-color: #f5f5f5;
-transition: background-color 0.3s, color 0.3s;
+    font-family: 'Inter', sans-serif;
+    background: url('images/bg-tech-clean.jpg') center center/cover no-repeat fixed;
+    min-height: 100vh;
+    width: 100vw;
+    color: #e0e0e0;
+    animation: fadein 1s ease-in-out;
 }
-body.dark-mode {
-background-color: #1e1e1e;
-color: #fff;
+
+/* Preisboxen Blur Effekt */
+.pricing-section-bg {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    animation: fadein 1s ease-in-out;
 }
-body.dark-mode section {
-background-color: transparent;
-box-shadow: none;
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin: 0;
+    animation: fadein 1s ease-in-out;
 }
-header {
-margin-bottom: 20px;
-color: white;
-background-color: transparent;
+
+.price-card {
+    width: 320px;
+    min-height: 220px;
+    padding: 32px 24px;
+    border-radius: 18px;
+    background: rgba(30,30,40,0.25);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1.5px solid rgba(255,255,255,0.25);
+    transition: box-shadow 0.3s, transform 0.3s;
+    text-align: center;
+    font-size: 1.1rem;
+    animation: fadein 1s ease-in-out;
 }
-.site-footer {
-background-color: transparent;
-color: #fff;
+
+.price-card:hover {
+    box-shadow: 0 16px 32px rgba(0,0,0,0.28);
+    transform: scale(1.04);
+    animation: fadein 1s ease-in-out;
 }
-body.dark-mode a {
-background-color: transparent;
-color: #fff;
+
+.price-card h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+    animation: fadein 1s ease-in-out;
 }
-body.dark-mode a:hover {
-background-color: #3151b7;
+
+.price-card .price {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 12px 0 18px 0;
+    color: #ffe082;
+    font-family: 'Inter', sans-serif;
+    animation: fadein 1s ease-in-out;
 }
-.navbar {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-background-color: transparent;
-width: 100%;
-height: 60px;
-padding: 0 20px;
-box-sizing: border-box;
-background-color: transparent;
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1000;
+
+.price-card .details {
+    color: #555;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    animation: fadein 1s ease-in-out;
 }
-.nav-links {
-list-style: none;
-padding: 0;
-margin: 0;
-display: flex;
-gap: 20px;
-}
-.nav-links li {
-margin: 0;
-}
-.nav-links a {
-text-decoration: none;
-color: #f5f5f5;
-display: block;
-width: 100%;
-}
-.contact-form input[type="text"],
-.contact-form input[type="email"] {
-width: 200px;
-}
-.site-main.container {
-margin: 0;
-padding: 80px 20px 20px 20px;
-box-sizing: border-box;
-}
-.contact-info {
-color: #cfa75c;
-font-weight: bold;
-white-space: pre-line;
+
+/* Add any additional styles here */
+
+.gray-border {
+  border: 1px solid #ccc;
+  animation: fadein 1s ease-in-out;
 }

@@ -1,12 +1,12 @@
 
 body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #101010 url('images/bg-tech-modern.jpg') no-repeat center center fixed;
+    background: #1a1a1a url('images/bg-tech-modern.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #fff;
+    color: #e0e0e0;
     transition: background-color 0.3s, color 0.3s;
     min-height: 100vh;
     overflow-x: hidden;
@@ -20,6 +20,7 @@ body::after {
     background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
     pointer-events: none;
     z-index: 0;
+    animation: fadein 1s ease-in-out;
 }
 
 @keyframes fadein {
@@ -30,6 +31,7 @@ body::after {
 main, header, footer {
     position: relative;
     z-index: 1;
+    animation: fadein 1s ease-in-out;
 }
 
 /* Navigation Topbar Layout */
@@ -44,6 +46,7 @@ main, header, footer {
     top: 0;
     left: 0;
     z-index: 999;
+    animation: fadein 1s ease-in-out;
 }
 
 .nav-links {
@@ -52,6 +55,7 @@ main, header, footer {
     gap: 20px;
     margin: 0;
     padding: 0;
+    animation: fadein 1s ease-in-out;
 }
 
 .nav-links a {
@@ -59,14 +63,19 @@ main, header, footer {
     color: #f5f5f5;
     font-weight: bold;
     transition: color 0.3s;
+    font-family: 'Inter', sans-serif;
+    animation: fadein 1s ease-in-out;
 }
 
 .nav-links a:hover {
     color: #cfa75c;
+    font-family: 'Inter', sans-serif;
+    animation: fadein 1s ease-in-out;
 }
 
 .site-main.container {
     padding-top: 80px;
+    animation: fadein 1s ease-in-out;
 }
 
 /* Burger Icon */
@@ -75,6 +84,7 @@ main, header, footer {
   font-size: 2rem;
   cursor: pointer;
   color: #fff;
+  animation: fadein 1s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -87,14 +97,17 @@ main, header, footer {
     background-color: rgba(16,16,16,0.95);
     display: none;
     padding: 20px 0;
+    animation: fadein 1s ease-in-out;
   }
 
   .nav-links.show {
     display: flex;
+    animation: fadein 1s ease-in-out;
   }
 
   .nav-toggle {
     display: block;
+    animation: fadein 1s ease-in-out;
   }
 }
 
@@ -104,6 +117,7 @@ main, header, footer {
     -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    animation: fadein 1s ease-in-out;
 }
 
 .nav-links {
@@ -111,10 +125,12 @@ main, header, footer {
     -webkit-backdrop-filter: blur(10px);
     background-color: rgba(16,16,16,0.85);
     border-top: 1px solid rgba(255,255,255,0.1);
+    animation: fadein 1s ease-in-out;
 }
 
 .nav-toggle {
   display: none !important;
+  animation: fadein 1s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -123,5 +139,6 @@ main, header, footer {
     display: flex !important;
     position: static;
     background: transparent;
+    animation: fadein 1s ease-in-out;
   }
 }

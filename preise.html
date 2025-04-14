@@ -21,20 +21,15 @@
   <!-- Styles -->
   <link href="style-managed-services-3d.css" rel="stylesheet"/>
   <link href="hamburger-menu.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="fonts/global.css">
   <!-- Scripts -->
-  <script defer="" src="script.js">
-  </script>
-  <script defer="" src="hamburger-menu.js">
-  </script>
+  <script defer="" src="script.js"></script>
+  <script defer="" src="hamburger-menu.js"></script>
+  <link rel="icon" href="../images/logo.png" type="image/png">
  </head>
  <body>
    <header>
-    <nav class="navbar">
-     <div class="logo">
-      <h1 style="color:#cfa75c;">
-       IT Werkstatt
-      </h1>
-     </div>
+<nav class="navbar" style="justify-content: flex-end; width: 100%;">
      <div class="burger">
       <div>
       </div>
@@ -43,7 +38,7 @@
       <div>
       </div>
      </div>
-     <ul class="nav-links">
+<ul class="nav-links" style="justify-content: center;">
       <li>
        <a href="index.html">
         Start
@@ -54,11 +49,11 @@
         Dienstleistungen
        </a>
       </li>
-      <li>
-       <a href="Automatisieren.html">
-        Automatisieren
-       </a>
-      </li>
+<li>
+ <a href="automatisieren.html">
+  Automatisierung
+ </a>
+</li>
       <li>
        <a href="preise.html">
         Preise
@@ -75,21 +70,23 @@
 <main class="site-main container" id="main">
 <main class="container">
   <h1>Preisgestaltung</h1>
-  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-    <div style="flex: 1; min-width: 250px; background: #f7f7f7; padding: 20px; border-radius: 8px;">
-      <h2>Basic</h2>
-      <p>✔ IT-Monitoring<br>✔ Fernwartung<br>✔ Sicherheitsupdates</p>
-      <p><strong>ab 89 €/Stunde</strong></p>
-    </div>
-    <div style="flex: 1; min-width: 250px; background: #e7f0ff; padding: 20px; border-radius: 8px;">
-      <h2>Pro</h2>
-      <p>✔ Alles aus Basic<br>✔ Backup & Recovery<br>✔ Automatiseren<br>✔ Benutzerverwaltung</p>
-      <p><strong>ab 149 €/Stunde</strong></p>
-    </div>
-    <div style="flex: 1; min-width: 250px; background: #fff7e6; padding: 20px; border-radius: 8px;">
-      <h2>Enterprise</h2>
-      <p>✔ Individuelle Betreuung<br>✔ 24/7-Support<br>✔ SLA-Vereinbarungen<br>✔ Vor-Ort-Service</p>
-      <p><strong>Preis auf Anfrage</strong></p>
+  <div class="pricing-section-bg">
+    <div class="pricing-container">
+      <div class="price-card">
+          <h2>Basic</h2>
+          <p class="price">ab 89 €/Stunde</p>
+          <p class="details">✔ IT-Monitoring<br>✔ Fernwartung<br>✔ Sicherheitsupdates</p>
+      </div>
+      <div class="price-card">
+          <h2>Pro</h2>
+          <p class="price">ab 149 €/Stunde</p>
+          <p class="details">✔ Alles aus Basic<br>✔ Backup & Recovery<br>✔ Automatisierung<br>✔ Benutzerverwaltung</p>
+      </div>
+      <div class="price-card">
+          <h2>Enterprise</h2>
+          <p class="price">Preis auf Anfrage</p>
+          <p class="details">✔ Individuelle Betreuung<br>✔ 24/7-Support<br>✔ SLA-Vereinbarungen<br>✔ Vor-Ort-Service</p>
+      </div>
     </div>
   </div>
 </main>
